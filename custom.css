@@ -127,7 +127,7 @@ i{
     transition: right 0.3s ease;
 }
 main{
-    height: 88vh;
+    height:auto;
 }
 .sidebar-li{
     height: 90vh;
@@ -196,7 +196,8 @@ main{
     display: flex;
     justify-content: center;
     flex-direction: column;
-    
+    height: 80lvh;
+    overflow-y:scroll;
 }
 .welcome p,h1{
     margin: 0px;
