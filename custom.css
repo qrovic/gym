@@ -116,7 +116,7 @@ i{
 }
 
 .sidebar{
-    height: 100%;
+    max-height: 100lvh;
     width: 250px;
     background-color: white;
     margin: 0px 0px 0px 0px;
