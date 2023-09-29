@@ -1,25 +1,23 @@
 const body = document.querySelector("body");
 const sidebar = body.querySelector(".sidebar");
 const toggle = body.querySelector(".toggle");
-const listItems = sidebar.querySelectorAll("ul"); // Select all <li> elements within the sidebar
+const listItems = sidebar.querySelectorAll("li"); // Select all <li> elements within the sidebar
 
 function toggleSidebar() {
     sidebar.classList.toggle("close");
     sidebar.classList.toggle("open");
 }
 
-function checkOverflow() {
-    listItems.forEach((item) => {
-        // Check if the text content overflows the container
-        if (item.scrollWidth > item.clientWidth) {
-            sidebar.classList.add("close"); // Close the sidebar
-        }
-    });
-}
 
-toggle.addEventListener("click", () => {
-    toggleSidebar();
-});
+
+const isMobile = window.innerWidth < 768;
+if (isMobile) {
+    sidebar.classList.add("close");
+    toggle.style.display = "none"; // Hide the toggle button on mobile devices
+} else {
+    // Enable opening the sidebar when not on a mobile device
+    toggle.addEventListener("click", toggleSidebar); // Call toggleSidebar when the button is clicked
+}
 
 // Check for overflow initially and on window resize
 window.addEventListener("resize", checkOverflow);
