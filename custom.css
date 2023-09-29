@@ -794,4 +794,17 @@ td a{
     color: #0b817b;
     font-weight:bold;
 }
-
+@media screen and (min-width: 320px) and (max-width:767px){
+    .stats-div{
+        flex-direction: column;
+    }
+    .stats{
+        width:80%;
+    }
+    .total-income{
+        flex-direction:column;
+    }
+    .income-top, .income-bot{
+        flex-direction: column;
+    }
+}
