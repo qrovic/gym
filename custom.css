@@ -127,10 +127,10 @@ i{
     transition: right 0.3s ease;
 }
 main{
-    height:auto;
+    height:100lvh;
 }
 .sidebar-li{
-    height: 90vh;
+    height: 90lvh;
 }
 .sidebar-button i{
     font-size: 1.5em;
@@ -198,6 +198,7 @@ main{
     flex-direction: column;
     height: 80lvh;
     overflow-y:scroll;
+    height: 80lvh;
 }
 .welcome p,h1{
     margin: 0px;
