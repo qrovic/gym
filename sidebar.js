@@ -8,8 +8,6 @@ function toggleSidebar() {
     sidebar.classList.toggle("open");
 }
 
-
-
 const isMobile = window.innerWidth < 768;
 if (isMobile) {
     sidebar.classList.add("close");
