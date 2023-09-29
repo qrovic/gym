@@ -121,13 +121,12 @@ i{
     margin: 0px 0px 0px 0px;
     padding: 0px 0px 0px 0px;
     display: flex;
-    
     flex-direction: column;
     overflow-x:hidden;
     transition: right 0.3s ease;
 }
 main{
-    height:100lvh;
+    height:90vh;
 }
 .sidebar-li{
     height: 90lvh;
@@ -196,9 +195,9 @@ main{
     display: flex;
     justify-content: center;
     flex-direction: column;
-    height: 80lvh;
+    
     overflow-y:scroll;
-    height: 80lvh;
+    max-height: 60lvh;
 }
 .welcome p,h1{
     margin: 0px;
