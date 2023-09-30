@@ -130,7 +130,7 @@ main{
     height:90vh;
 }
 .sidebar-li{
-    height: 90lvh;
+    height: calc(100lvh-60px);
 }
 .sidebar-button i{
     font-size: 1.5em;
