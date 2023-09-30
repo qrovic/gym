@@ -6,7 +6,7 @@ nav a,li{
 .logo{
     display: flex;
     flex-direction: row;
-    font-size: 30px;
+    font-size: 27px;
     text-decoration: none;
     color: white;
     height: 60px;
@@ -29,7 +29,6 @@ nav a,li{
 }
 .right{
     width: 100%;
-    
 }
 .top-nav{
     width: auto;
@@ -38,7 +37,7 @@ body{
     display: flex;
     flex-direction: row;
     width: 100vw;
-    height: calc(100lvh-60px);
+    height: 100vh;
     background-color: #def2f1;
     margin: 0px 0px;
     padding: 0px 0px;
@@ -116,21 +115,25 @@ i{
 }
 
 .sidebar{
-    max-height: 100lvh;
+    height: 100%;
     width: 250px;
     background-color: white;
     margin: 0px 0px 0px 0px;
     padding: 0px 0px 0px 0px;
     display: flex;
+    
     flex-direction: column;
     overflow-x:hidden;
     transition: right 0.3s ease;
 }
 main{
-    height:90vh;
+    height: auto;
+    padding-top: 20px;
+    padding-left: 20px;
+    margin: 5px;
 }
 .sidebar-li{
-    height: 100lvh;
+    height: 90vh;
 }
 .sidebar-button i{
     font-size: 1.5em;
@@ -196,17 +199,15 @@ main{
     display: flex;
     justify-content: center;
     flex-direction: column;
-    
-    overflow-y:scroll;
-    max-height: 80lvh;
+    max-height: 80lvh;;
 }
 .welcome p,h1{
     margin: 0px;
 }
-.welcome {
-    margin-bottom: 30px;
+.welcome{
     
 }
+
 .stats{
     width: 18%;
     height: 20vh;
@@ -242,7 +243,7 @@ main{
 .stats-div{
     display: flex;
     flex-direction: row;
-    justify-content: space-evenly;
+    justify-content: space-between;
     align-items: center;
     width: 100%; 
     
@@ -787,8 +788,8 @@ th {
 }
 
 .swal2-confirm {
-    background-color: #ff5733; /* Change to your desired color */
-    color: white; /* Text color */
+    background-color: #ff5733; 
+    color: white; 
     border: none;
 }
 td a{
@@ -796,17 +797,91 @@ td a{
     color: #0b817b;
     font-weight:bold;
 }
-@media screen and (min-width: 320px) and (max-width:767px){
+
+@media screen and (min-width: 319px) and (max-width:767px){
     .stats-div{
         flex-direction: column;
+        height: fit-content;
+        padding-top: 10px;
+        height: 100%;
+        flex:1;
+        width: 100%;
     }
     .stats{
-        width:80%;
+        width:93%;
+        height: fit-content;
+        margin-bottom: 10px;
+        flex:1;
     }
     .total-income{
         flex-direction:column;
+        width: auto;
+        
     }
     .income-top, .income-bot{
         flex-direction: column;
     }
+    .sales,.sales-right{
+        height: auto;
+    }
+    .sales{
+        border-bottom: 1px solid  #247a7543;  
+    }
+    .content{
+        max-height: 80lvh;
+        overflow-y: scroll;
+        justify-content: flex-start;
+        flex-direction: column-reverse;
+    } 
+    .logo{
+        font-size:large;
+    }
+}
+@media screen and (min-width: 768px) and (max-width:1023px){
+    .stats-div{
+        flex-direction: column;
+        height: fit-content;
+        height: 100lvh;
+        flex: 1;
+        max-height:80lvh;
+    }
+    .logo{
+        font-size:x-large;
+    }
+    .stats{
+        width:80%;
+        height: fit-content;
+        flex: 1;
+        margin-bottom: 10px;
+        padding: 10px 20px;
+    }
+    .total-income{
+        flex-direction:column;
+        width: auto;
+        margin-bottom: 10px;
+        margin-left: 10px;
+        max-height:80lvh;
+    }
+    .income-top, .income-bot{
+        flex-direction: column;
+    }
+    .income-bot{
+        flex: 1;
+        justify-content: space-around;
+    }
+    .sales,.sales-right{
+        height:max-content;
+        border: 0px;
+        flex: 1;
+    }
+    .sales{
+        border-bottom: 1px solid  #247a7543;  
+    }
+    .content{
+        max-height: 80lvh;
+        overflow-y: scroll;
+        justify-content: flex-start;
+        flex-direction: row;
+        flex: 1;
+    } 
 }
