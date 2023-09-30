@@ -36,6 +36,8 @@ nav a,li{
 body{
     display: flex;
     flex-direction: row;
+    position:fixed;
+    height:100%;
     width:100%;
     min-height: 100lvh;
     background-color: #def2f1;
