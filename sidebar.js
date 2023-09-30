@@ -13,7 +13,7 @@ function handleWindowResize() {
     
     if (isMobile) {
         sidebar.classList.add("close");
-        toggle.style.display = "none";
+        toggle.style.display = "flex";
     } else {
         sidebar.classList.remove("close");
         toggle.style.display = "block"; 
