@@ -208,7 +208,7 @@ main{
     display: flex;
     justify-content: center;
     flex-direction: column;
-    max-height: calc(100lvh - 50px - 60px - 25px - 50px);
+    max-height: calc(100lvh - 50px - 60px - 25px - 45px);
     
 }
 .welcome p,h1{
