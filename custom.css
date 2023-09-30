@@ -940,7 +940,7 @@ td a{
     }
     #content-report{
         display: flex;
-        
+        min-height: calc(100lvh - 50px - 70px);
         justify-content: center;
     }
     .scatter-div{
