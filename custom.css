@@ -932,7 +932,7 @@ td a{
     #content-membership{
         padding-right: 10px;
         padding-left: 10px;
-        max-width: (100lvh - 50px - 60px - 25px - 0px);
+        max-height: (100lvh - 50px - 60px - 25px - 0px);
     }
     .chart{
         flex-direction: row;
