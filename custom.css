@@ -199,7 +199,7 @@ main{
     display: flex;
     justify-content: center;
     flex-direction: column;
-    max-height: calc(100lvh - 50px - 60px - 25px - 60px);
+    max-height: calc(100lvh - 50px - 60px - 25px - 50px);
     
 }
 .welcome p,h1{
@@ -874,6 +874,9 @@ td a{
         padding-left: 10px;
         width: 80%;
     }
+    form>.contact{
+        margin-bottom: 15px;
+    }
     .members-show{
         width: 100%;
        
@@ -895,7 +898,7 @@ td a{
         margin-bottom: 20px;
     }
     #content-inventory{
-        max-height: 100vh;
+        max-height: calc(100lvh - 50px - 60px - 25px - 50px);
     }
     .inventory{
         max-height: 100vh;
@@ -904,6 +907,9 @@ td a{
     .item{
         width: 100%;
         height: 70vw;
+    }
+    .add-item button{
+        font-size: 1em;
     }
     .sales{
         border-right: transparent;
@@ -950,7 +956,7 @@ td a{
         border-bottom: 1px solid  #247a7543;  
     }
     .content{
-        max-height: 80lvh;
+        max-height: calc(100lvh - 50px - 60px - 25px - 50px);
         overflow-y: scroll;
         justify-content: center;
         flex-direction: row;
@@ -987,7 +993,7 @@ td a{
     .pie-div{
         margin-left: 10px;
     }
-  
+    
     .scatter-div,.line-div{
         margin-left: 0px;
     }
@@ -1009,7 +1015,7 @@ td a{
         width: 100%;
         margin: 0px;
         margin-bottom: 20px;
-        
+        margin-right: 20px;
     }
     .members-show{
         flex: 1;
