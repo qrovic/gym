@@ -946,7 +946,7 @@ td a{
         margin-bottom: 20px;
     }
     #content-inventory{
-        max-height: calc(100lvh - 50px - 60px - 25px - 40px);
+        max-height: calc(100lvh - 50px - 60px - 25px - 45px);
     }
     .inventory{
         max-height: 100vh;
