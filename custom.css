@@ -200,7 +200,7 @@ main{
 .content{
     padding-left: 30px;
     padding-right: 30px;
-    padding-bottom: 10px;
+    
     padding-top: 20px;
     
 }
@@ -208,7 +208,7 @@ main{
     display: flex;
     justify-content: center;
     flex-direction: column;
-    max-height: calc(100lvh - 50px - 60px - 25px - 45px);
+    max-height: calc(100lvh - 50px - 60px - 25px - 58px);
     
 }
 .welcome p,h1{
@@ -502,7 +502,7 @@ input#date
     align-items: center;
     padding-bottom: 30px;
     max-height: 75vh;
-    
+    margin-bottom: 10px;
 }
 
 
@@ -740,7 +740,7 @@ th {
     flex-direction: row;
     justify-content: space-evenly;
     flex-wrap: wrap;
-    max-height: 80vh;
+   
     overflow-y: scroll;
 }
 .graph-div{
@@ -849,13 +849,14 @@ td a{
     .total-income{
         flex-direction:column;
         width: auto;
-        
+        margin-bottom: 20px;
     }
     .income-top, .income-bot{
         flex-direction: column;
     }
     .sales,.sales-right{
         height: auto;
+        padding: 5px 0px;
     }
     .sales{
         border-bottom: 1px solid  #247a7543;  
@@ -865,7 +866,8 @@ td a{
         justify-content: flex-start;
         flex-direction: column;
         padding: 0px 15px;
-        max-height:calc(100lvh - 50px - 60px - 25px - 20px);
+        max-height: calc(100lvh - 50px - 60px - 25px - 10px);
+        
     } 
     .logo{
         font-size:x-large;
@@ -932,26 +934,28 @@ td a{
     #content-membership{
         padding-right: 10px;
         padding-left: 10px;
-        max-height: calc(100lvh - 50px - 60px - 25px - 0px);
+        max-height: calc(100lvh - 50px - 77px);
     }
     .chart{
         flex-direction: row;
-
+        padding-bottom: 20px;
+        margin-top: 10px;
     }
     #content-report{
         display: flex;
-        min-height: calc(100lvh - 50px - 80px);
+        min-height: calc(100lvh - 50px - 78px);
         justify-content: center;
     }
     .scatter-div{
         margin-bottom: 20px;
     }
     #content-inventory{
-        max-height: calc(100lvh - 50px - 60px - 25px - 45px);
+        max-height: calc(100lvh - 50px - 60px - 62px);
     }
     .inventory{
         max-height: 100vh;
         flex-direction: row;
+        max-height: calc(100lvh - 50px - 60px - 10px);
     }
     .item{
         width: 100%;
@@ -968,9 +972,9 @@ td a{
     .stats-div{
         flex-direction: column;
         height: fit-content;
-        height: 100lvh;
+       
         flex: 1;
-        max-height:80lvh;
+   
     }
     .logo{
         font-size:x-large;
@@ -990,7 +994,8 @@ td a{
         width: auto;
         margin-bottom: 10px;
         margin-left: 10px;
-        max-height:80lvh;
+       
+       
     }
     .income-top, .income-bot{
         flex-direction: column;
@@ -1008,17 +1013,24 @@ td a{
         border-bottom: 1px solid  #247a7543;  
     }
     .content{
-        max-height: calc(100lvh - 50px - 60px - 25px - 50px);
-        overflow-y: scroll;
+        max-height: calc(100lvh - 50px - 60px - 25px);
+        
         justify-content: center;
         flex-direction: row;
         flex: 1;
+        padding: 0px 10px;
+        margin-top: 10px;
+        
     } 
+    .stats-div{
+        max-height: calc(100lvh - 50px - 60px - 25px - 15px);
+        overflow-y: scroll;
+    }
     .chart{
         flex-wrap: wrap;
         flex-direction: row;
         width: 80%;
-       justify-content: unset;
+        justify-content: unset;
 
     }
     
@@ -1119,12 +1131,21 @@ td a{
     #content-report{
         padding-left: 10px;
         padding-right: 10px;
+        max-height: calc(100lvh - 50px - 60px);
+        padding-top: 10px;
     }
     #content-inventory{
-        max-height: calc(100lvh - 50px - 60px - 25px - 70px);
+        max-height: calc(100lvh);
+        padding: 0px;
+    }
+    #content-membership{
+        max-height: calc(100lvh - 50px - 93px);
+        padding-bottom: 10px;
+        overflow-y: scroll;
+        
     }
     .inventory{
-        max-height: calc(100lvh - 50px - 60px - 25px - 70px);
+        max-height: calc(100lvh - 50px - 60px - 25px - 39px);
         flex-direction: row;
         flex-wrap: wrap;
     }
