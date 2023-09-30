@@ -802,12 +802,12 @@ td a{
         top: 60px;
         left: 0;
         max-width: 60%;
-        min-width: 60%; /* Adjust the width as needed */
+        min-width: 60%;
         height: 100%;
-        background-color: white; /* Sidebar background color */
-        color: white; /* Text color */
-        transition: left 0.3s ease; /* Smooth transition for the left property */
-        z-index: 999; /* Ensure it's on top */
+        background-color: white; 
+        color: white; 
+        transition: left 0.3s ease; 
+        z-index: 999; 
     }
    
     .logo{
@@ -827,7 +827,7 @@ td a{
        
     }
     .sidebar.close {
-        left: -80%; /* Hide the sidebar off-screen */
+        left: -80%; 
     }
 
     .stats-div{
