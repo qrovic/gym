@@ -124,7 +124,7 @@ i{
     
     flex-direction: column;
     overflow-x:hidden;
-    transition: right 0.3s ease;
+    -webkit-transition: all 0.3s ease-in-out;
 }
 main{
     height: auto;
@@ -827,7 +827,8 @@ td a{
         
     } 
     .logo{
-        font-size:large;
+        font-size:x-large;
+        padding: 0px 18px;
     }
     .graph-div,.line-div,.scatter-div,.pie-div
     {
