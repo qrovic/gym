@@ -157,8 +157,11 @@ main{
     
 }
 .sidebar.close .li-text{
-    color: wheat;
+    
     opacity: 0;
+}
+.sidebar.close #logo-name{
+    opacity: 1;
 }
 
 .li-text{
@@ -794,6 +797,39 @@ td a{
 }
 
 @media screen and (min-width: 320px) and (max-width:767px){
+    .sidebar {
+        position: fixed;
+        top: 60px;
+        left: 0;
+        max-width: 60%;
+        min-width: 60%; /* Adjust the width as needed */
+        height: 100%;
+        background-color: white; /* Sidebar background color */
+        color: white; /* Text color */
+        transition: left 0.3s ease; /* Smooth transition for the left property */
+        z-index: 999; /* Ensure it's on top */
+    }
+   
+    .logo{
+        position: fixed;
+        top: 0px;
+        right: 20%;
+        left: 20%;
+        display: flex;
+        justify-content: center;
+    }
+   
+    .nav-profile-text{
+        display: none;
+    }
+   
+    .top-nav{
+       
+    }
+    .sidebar.close {
+        left: -80%; /* Hide the sidebar off-screen */
+    }
+
     .stats-div{
         flex-direction: column;
         height: fit-content;
@@ -834,6 +870,12 @@ td a{
     .logo{
         font-size:x-large;
         padding: 0px 18px;
+        box-shadow: none;
+        color: white;
+    }
+    .logo a{
+        color: white;
+        font-weight: bold;
     }
     .graph-div,.line-div,.scatter-div,.pie-div
     {
@@ -931,6 +973,9 @@ td a{
     }
     .logo{
         font-size:x-large;
+    }
+    .sidebar.close #logo-name{
+        opacity: 0;
     }
     .stats{
         width:80%;
@@ -1124,5 +1169,7 @@ td a{
     .graph-div,.line-div,.scatter-div,.pie-div{
         min-width: 35%;
     }
-    
+    .sidebar.close #logo-name{
+        opacity: 0;
+    }
 }
