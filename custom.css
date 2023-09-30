@@ -36,8 +36,6 @@ nav a,li{
 body{
     display: flex;
     flex-direction: row;
-    position:fixed;
-    height:100%;
     width:100%;
     min-height: 100lvh;
     background-color: #def2f1;
@@ -117,10 +115,7 @@ i{
 }
 
 .sidebar{
-    min-height: 100vh;
-    
-    max-height: 100svh; 
-    min-height: -webkit-fill-available;
+    min-height: 100lvh;
     width: 250px;
     background-color: white;
     margin: 0px 0px 0px 0px;
@@ -827,8 +822,9 @@ td a{
     .content{
         overflow-y: scroll;
         justify-content: flex-start;
-        flex-direction: column-reverse;
+        flex-direction: column;
         padding: 0px 15px;
+        
     } 
     .logo{
         font-size:large;
