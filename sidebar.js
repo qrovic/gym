@@ -8,15 +8,36 @@ function toggleSidebar() {
     sidebar.classList.toggle("open");
 }
 
-const isMobile = window.innerWidth < 768;
-if (isMobile) {
-    sidebar.classList.add("close");
-    toggle.style.display = "none"; // Hide the toggle button on mobile devices
-} else {
-    // Enable opening the sidebar when not on a mobile device
-    toggle.addEventListener("click", toggleSidebar); // Call toggleSidebar when the button is clicked
+function handleWindowResize() {
+    const isMobile = window.innerWidth < 768;
+    
+    if (isMobile) {
+        sidebar.classList.add("close");
+        toggle.style.display = "none";
+    } else {
+        sidebar.classList.remove("close");
+        toggle.style.display = "block"; 
+    }
 }
 
-// Check for overflow initially and on window resize
+
+handleWindowResize();
+
+
+toggle.addEventListener("click", toggleSidebar); 
+
+
+window.addEventListener("resize", handleWindowResize);
+
+
+window.addEventListener("resize", () => {
+    const isMobile = window.innerWidth < 768;
+    if (isMobile && sidebar.classList.contains("open")) {
+        sidebar.classList.remove("open");
+        sidebar.classList.add("close");
+    }
+});
+
+
 window.addEventListener("resize", checkOverflow);
 window.addEventListener("load", checkOverflow);
