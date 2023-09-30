@@ -865,7 +865,7 @@ td a{
         justify-content: flex-start;
         flex-direction: column;
         padding: 0px 15px;
-        
+        max-height:calc(100lvh - 50px - 60px - 25px - 20px);
     } 
     .logo{
         font-size:x-large;
