@@ -198,7 +198,7 @@ main{
     flex-direction: column;
     
     overflow-y:scroll;
-    max-height: 60lvh;
+    max-height: 80lvh;
 }
 .welcome p,h1{
     margin: 0px;
